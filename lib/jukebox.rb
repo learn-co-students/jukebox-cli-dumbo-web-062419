@@ -43,10 +43,11 @@ def exit_jukebox
 end
 
 def run(songs_array)
+  users_command = ""
   help
   puts "Please enter a command:"
-  users_command = gets.chomp
   while users_command != "exit"
+  users_command = gets.chomp
     if users_command == "exit"
       exit_jukebox
     elsif users_command == "help"
