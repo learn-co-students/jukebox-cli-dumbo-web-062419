@@ -46,6 +46,7 @@ def run
   help
   puts "Please enter a command:"
   users_command = get.chomp
+  binding.pry
   while command != "exit"
     if users_command == "exit"
       exit_jukebox
@@ -58,8 +59,3 @@ def run
     end
   end
 end
-
-
-
-#puts "Please enter a command:"
-#users_command = gets.chomp
