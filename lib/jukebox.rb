@@ -54,7 +54,7 @@ def run(songs_array)
     elsif users_command == "list"
       list(songs_array)
     elsif users_command == "play"
-      play
+      play(songs_array)
     else
       puts "Invalid input, please try again"
     end
