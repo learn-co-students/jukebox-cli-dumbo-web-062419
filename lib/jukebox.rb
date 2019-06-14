@@ -52,7 +52,7 @@ def run(songs_array)
     elsif users_command == "help"
       help
     elsif users_command == "list"
-      list
+      list(songs_array)
     elsif users_command == "play"
       play
     else
