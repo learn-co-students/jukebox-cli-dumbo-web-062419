@@ -55,7 +55,7 @@ def run
       list
     elsif users_command == "play"
       play
-
+    end
   end
 end
 
