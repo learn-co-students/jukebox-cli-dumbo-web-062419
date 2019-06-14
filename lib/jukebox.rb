@@ -50,6 +50,10 @@ def run
     exit_jukebox
   elsif users_command == "help"
     help
+  elsif users_command == "list"
+    list
+  elsif users_command == "play"
+    play
 
 
 #  end
