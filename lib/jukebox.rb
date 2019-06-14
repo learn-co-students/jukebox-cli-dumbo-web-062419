@@ -31,7 +31,7 @@ def play(songs_array)
   user_selection = gets.chomp
     if user_selection.to_i.between?(1, 9)
       puts "Playing #{songs_array[user_selection.to_i - 1]}"
-    elsif song_array.include?(user_selection)
+    elsif songs_array.include?(user_selection)
       puts "Playing #{user_selection}"
     else
       puts "Invalid input, please try again"
