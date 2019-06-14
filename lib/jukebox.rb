@@ -56,6 +56,8 @@ def run
       list
     elsif users_command == "play"
       play
+    else
+      puts "Invalid input, please try again"
     end
   end
 end
