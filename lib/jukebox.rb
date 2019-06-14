@@ -55,9 +55,8 @@ def run
   elsif users_command == "play"
     play
 
-
-#  end
-#end
+  end
+end
 
 
 
