@@ -44,7 +44,9 @@ end
 # Can find a song when given a full song name
 # Returns an error when given a number that does not correspond to a song
 # Returns an error when given a name that does not correspond to an existing song
-# ???????? When running through `learn`, receiving an error:
+
+# ????????????????? Works fine using `ruby` command
+# When running through `learn`, receiving an error:
 # An error occurred while loading ./spec/jukebox_spec.rb.
 # Failure/Error: users_song_choice = gets.chomp
 
@@ -66,7 +68,7 @@ def play(songs)
   puts return_statement
 end
 
-play(songs)
+# play(songs)
 
 # Puts out: "Goodbye"
 def exit_jukebox
@@ -79,8 +81,6 @@ def run(songs)
   user_command = gets.chomp
 
   while user_command != "exit"
-    puts "Please enter a command:"
-    user_command = gets.chomp
     if user_command == "help"
       help
     elsif user_command == "list"
@@ -88,6 +88,9 @@ def run(songs)
     elsif user_command == "play"
       play(songs)
     end
+
+    puts "Please enter a command:"
+    user_command = gets.chomp
   end
 
   if user_command == "exit"
@@ -95,4 +98,4 @@ def run(songs)
   end
 end
 
-# run(songs)
+run(songs)
